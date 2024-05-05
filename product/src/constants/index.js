@@ -8,5 +8,8 @@ module.exports.ResponseMessage = {
   ALL_FIELDS_ARE_REQUIRED: "All fields are required",
   INVALID_PASSWORD: "Invalid password",
   TOKEN_IS_MISSING: "Token is missing",
-  EMAIL_IS_ALREADY_REGISTERED: "Email is already registered",
+  AUTHORIZATION_TOKEN_IS_MISSING: "Authorization token is missing",
+  AUTHORIZATION_TOKEN_IS_INVALID: "Authorization token is invalid",
+  PRODUCT_CREATED_SUCCESSFULLY: "Product created successfully",
+  PRODUCT_NOT_FOUND: "Product not found",
 };
