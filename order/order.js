@@ -3,6 +3,7 @@ const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const { connectToDatabase } = require('./src/config/dbConfig');
 const { default: mongoose } = require('mongoose');
+const router = require('./src/routes/orderRoute');
 // const router = require('./src/routes/productRoute');
 require('dotenv').config();
 
@@ -32,7 +33,7 @@ app.get("/api/v1/order", (req, res) => {
 });
 
 //Routes
-// app.use('/api/v1/order', router);
+app.use('/api/v1/order', router);
 
 // Error handling middleware - to catch errors globally
 app.use((err, req, res, next) => {

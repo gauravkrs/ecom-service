@@ -17,7 +17,8 @@
     "express": "^4.19.2",
     "express-rate-limit": "^7.2.0",
     "mongoose": "^8.3.3",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "razorpay": "^2.9.3"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
