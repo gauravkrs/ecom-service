@@ -1,4 +1,3 @@
-const { Product } = require("../../../product-service/src/models/productModel");
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
@@ -9,6 +8,6 @@ const inventorySchema = new Schema({
   updatedAt: { type: Date, default: Date.now },
 });
 
-const Inventort = mongoose.model("Order", inventorySchema);
+const Inventory = mongoose.model("Order", inventorySchema);
 
-module.exports = Inventort;
+module.exports = Inventory;

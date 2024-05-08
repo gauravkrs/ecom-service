@@ -10,4 +10,14 @@ module.exports.ResponseMessage = {
   TOKEN_IS_MISSING: "Token is missing",
   AUTHORIZATION_TOKEN_IS_MISSING: "Authorization token is missing",
   AUTHORIZATION_TOKEN_IS_INVALID: "Authorization token is invalid",
+  PAYMENT_PROCESSING_FAILED: "Payment processing failed",
+  PAYMENT_SUCCESSFUL:"Payment successful",
+  ORDER_NOT_FOUND:"Order not found"
 };
+
+module.exports.Status = {
+  SUCCESS: "Success",
+  FAILED: "Failed",
+  PENDING: "Pending",
+
+}
