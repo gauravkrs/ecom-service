@@ -1,6 +1,8 @@
 const axios = require('axios');
 const { ResponseMessage } = require('../constants');
+require('dotenv').config();
 
+const BASE_URL = process.env.BASE_URL;
 const verifyUser = async (req, res, next) => {
     const token = req.headers.authorization;
 
