@@ -54,13 +54,13 @@ BASE_URL=http://localhost:3003/api/v1
 PORT=3007
 MONGODB_URI=mongodb://localhost:27017/order_db
 BASE_URL=http://localhost:3003/api/v1
-Adjust configuration values as needed, such as database URIs and ports.
-Running the Microservices
+<br>Adjust configuration values as needed, such as database URIs and ports.
+<br>Running the Microservices
 Start MongoDB:
 bash
 Copy code
 mongod
-Start each microservice in separate terminal tabs/windows:
+<br>Start each microservice in separate terminal tabs/windows:
 bash
 Copy code
 cd user-auth-service
