@@ -73,6 +73,20 @@ const loginUser = async (req, res) => {
   }
 };
 
+const logoutUser = async (req, res) => {
+  const { userName } = req.body;
+  try {
+    await User.findOneAndUpdate(
+      { username: userName },
+      { refreshToken: null, refreshTokenExp: null }
+    );
+    res.status(200).send({ message: ResponseMessage.SUCCESS });
+  } catch (error) {
+    console.log("Logout error:", error);
+    res.status(500).send({ message: ResponseMessage.INTERNAL_SERVER_ERROR });
+  }
+};
+
 const getRefreshTokenExpiration = () => {
   const expirationDate = new Date();
   expirationDate.setDate(expirationDate.getDate() + 7); // Set refresh token expiration to 7 days from now
